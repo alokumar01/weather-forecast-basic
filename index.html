@@ -8,7 +8,6 @@
 </head>
 <body>
   <div class="weather-app">
-    
     <div class="search-container">
       <input type="text" id="cityInput" placeholder="Enter city name" />
       <button id="searchButton">Search</button>
@@ -16,14 +15,34 @@
 
     <div class="weather-info">
       <h1 id="cityName"></h1>
-      <p id="description" style="text-transform: capitalize; font-size: x-large; font-style: italic;"></p>
-      <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
-      <p><strong>Feels Like:</strong> <span id="feelsLike"></span>°C</p>
-      <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
-      <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> m/s</p>
-      <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
-      <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+      <p id="description" class="description"></p>
+
+      <div class="details">
+        <div class="detail">
+          <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+        </div>
+        <div class="detail">
+          <p><strong>Feels Like:</strong> <span id="feelsLike"></span>°C</p>
+        </div>
+        <div class="detail">
+          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        </div>
+        <div class="detail">
+          <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> m/s</p>
+        </div>
+        <div class="detail">
+          <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+        </div>
+        <div class="detail">
+          <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+        </div>
+      </div>
     </div>
+
+    <footer>
+      <p>Developed by @alokumar <a target="_blank" href="https://github.com/alokumar01">GitHub</a></p>
+      
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>

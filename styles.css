@@ -1,54 +1,93 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 0.5s ease;
-  color: white;
-  text-align: center;
+  margin: 20px;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  width: 100vw; 
+  overflow: hidden; 
 }
-  
-.weather-app {
-  padding: 20px;
-}
-  
-.search-container {
-  margin: 20px 0;
-}
-  
+
+
 #cityInput {
+  /* border: 10px solid #c0b5b5; */
+  background: #ffffffc7;
+  backdrop-filter: blur(100px);
   padding: 10px;
   width: 70%;
   border: none;
   border-radius: 5px;
   outline: none;
+  font-size: 1rem;
 }
-  
+
 #searchButton {
   padding: 10px 15px;
   margin-left: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4ebd32cb;
+  background-color: #ff6f61;
   color: white;
+  font-size: 1rem;
   cursor: pointer;
 }
-  
+
 .weather-info {
   margin-top: 20px;
-  background: rgba(0, 0, 0, 0.098); 
+  background: rgba(140, 140, 140, 0.39); 
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(23, 158, 192, 0.116); 
-  line-height: 5vh;
-  font-weight: 900;
-  color: rgb(255, 255, 255);
-    /* padding-left: ; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  font-weight: 600;
+  color: #f5f5f5;
 }
-  
-p {
-  margin: 5px 0;
+
+.description {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 20px;
 }
-  
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.detail {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 10px 15px;
+  min-width: 150px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.detail strong {
+  color: #df3c2dc7;
+  font-weight: bold;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* padding: px 0; */
+  /* background: rgba(210, 209, 209, 0.5); */
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fdfcfce4;
+  font-weight: 600;
+}
